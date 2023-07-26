@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Etiquetas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Gerador de Etiquetas</h1>
+    <form>
+        <label for="sku">SKU:</label>
+        <input type="text" id="sku" name="sku" required>
+        <button type="button" onclick="gerarEtiqueta()">Gerar Etiqueta</button>
+    </form>
+	<div style="height: 40px;"></div>
+
+    <div id="etiqueta">
+        <!-- Etiqueta será gerada aqui -->
+        <h2 id="etiquetaSKU"></h2>
+        <p id="etiquetaDescricao"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

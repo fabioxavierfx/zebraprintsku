@@ -1,0 +1,9 @@
+[
+    { "sku": "36", "descricao": "SSD 240GB KINGSTON" },
+    { "sku": "38", "descricao": "SSD 480GB KINGSTON" },
+	{ "sku": "46", "descricao": "SSD 240GB SANDISK" },
+	{ "sku": "56", "descricao": "SSD 960GB KINGSTON" },
+	{ "sku": "68", "descricao": "SSD 480GB SANDISK" },
+	{ "sku": "82", "descricao": "SSD 1TB SANDISK" },
+	{ "sku": "165", "descricao": "GOOGLE TV 4K" }
+]

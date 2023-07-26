@@ -1,0 +1,38 @@
+body {
+    font-family: Arial-black, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+#etiqueta {
+	border: 1px solid #ccc;
+	width: 15cm;
+	height: 9cm;
+	margin: 0 auto;
+	padding: 1px;
+	text-align: center;
+}
+
+#etiqueta h2 {
+	font-size: 320px;
+	margin: 0;
+	padding: 20px;
+	line-height: 75%;
+	font-weight: bold;
+}
+
+#etiqueta p {
+	font-size: 36px;
+	margin: 0;
+	padding: 20px;
+	line-height: 80%;
+	font-weight: bold;
+}
