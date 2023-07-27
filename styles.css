@@ -22,17 +22,17 @@ form {
 }
 
 #etiqueta h2 {
-    font-size: 70vw; /* Tamanho do texto do SKU - ajuste conforme necessário */
+    font-size: 3vw; /* Tamanho do texto do SKU - ajuste conforme necessário */
     font-weight: bold;
     margin: 0;
     padding: 0;
-    line-height: 70vw; /* Ajuste a altura da linha conforme necessário */
+    line-height: 3vw; /* Ajuste a altura da linha conforme necessário */
 }
 
 #etiqueta p {
-    font-size: 20vw; /* Tamanho do texto da descrição - ajuste conforme necessário */
+    font-size: 1vw; /* Tamanho do texto da descrição - ajuste conforme necessário */
     font-weight: normal; /* Remova o negrito se não for necessário */
     margin: 0;
     padding: 0;
-    line-height: 20vw; /* Ajuste a altura da linha conforme necessário */
+    line-height: 1vw; /* Ajuste a altura da linha conforme necessário */
 }
