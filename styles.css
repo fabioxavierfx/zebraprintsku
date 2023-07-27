@@ -1,5 +1,5 @@
 body {
-    font-family: Arial-black, sans-serif;
+    font-family: Arial, sans-serif;
     text-align: center;
     padding: 20px;
 }
@@ -13,26 +13,26 @@ form {
 }
 
 #etiqueta {
-	border: 1px solid #ccc;
-	width: 15cm;
-	height: 9cm;
-	margin: 0 auto;
-	padding: 1px;
-	text-align: center;
+    border: 1px solid #ccc;
+    width: 15cm;
+    height: 10cm;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
 }
 
 #etiqueta h2 {
-	font-size: 320px;
-	margin: 0;
-	padding: 20px;
-	line-height: 75%;
-	font-weight: bold;
+    font-size: 12px; /* Tamanho do texto do SKU - ajuste conforme necessário */
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    line-height: 12px; /* Ajuste a altura da linha conforme necessário */
 }
 
 #etiqueta p {
-	font-size: 36px;
-	margin: 0;
-	padding: 20px;
-	line-height: 80%;
-	font-weight: bold;
+    font-size: 10px; /* Tamanho do texto da descrição - ajuste conforme necessário */
+    font-weight: normal; /* Remova o negrito se não for necessário */
+    margin: 0;
+    padding: 0;
+    line-height: 10px; /* Ajuste a altura da linha conforme necessário */
 }
