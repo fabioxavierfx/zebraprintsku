@@ -26,7 +26,7 @@ form {
     font-weight: bold;
     margin: 0;
     padding: 0;
-    line-height: 12px; /* Ajuste a altura da linha conforme necessário */
+    line-height: 320px; /* Ajuste a altura da linha conforme necessário */
 }
 
 #etiqueta p {
@@ -34,5 +34,5 @@ form {
     font-weight: normal; /* Remova o negrito se não for necessário */
     margin: 0;
     padding: 0;
-    line-height: 10px; /* Ajuste a altura da linha conforme necessário */
+    line-height: 36px; /* Ajuste a altura da linha conforme necessário */
 }
