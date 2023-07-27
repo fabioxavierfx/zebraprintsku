@@ -24,11 +24,11 @@ function gerarEtiqueta() {
     // Função para ajustar o tamanho da fonte
     function ajustarTamanhoFonte(texto, elemento) {
         const tamanhoMaximo = elemento.offsetWidth; // Largura máxima do elemento
-        const tamanhoIdeal = 0.3 * tamanhoMaximo; // Defina o tamanho ideal em relação à largura (ajuste conforme necessário)
+        const tamanhoIdeal = 0.1 * tamanhoMaximo; // Defina o tamanho ideal em relação à largura (ajuste conforme necessário)
 
         // Verifica se o texto cabe no tamanho ideal
         if (elemento.scrollWidth > tamanhoIdeal) {
-            let tamanhoFonte = 1; // Tamanho inicial da fonte (1 rem)
+            let tamanhoFonte = 5; // Tamanho inicial da fonte (1 rem)
             elemento.style.fontSize = tamanhoFonte + "rem";
 
             // Aumenta o tamanho da fonte gradualmente até que o texto caiba no tamanho ideal
