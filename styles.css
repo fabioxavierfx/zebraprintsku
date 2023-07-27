@@ -22,12 +22,14 @@ form {
 }
 
 #etiqueta h2 {
+    font-size: 1.5cm; /* Tamanho do texto do SKU - ajuste conforme necessário */
     font-weight: bold;
     margin: 0;
     padding: 0;
 }
 
 #etiqueta p {
+    font-size: 1cm; /* Tamanho do texto da descrição - ajuste conforme necessário */
     font-weight: normal;
     margin: 0;
     padding: 0;
