@@ -20,6 +20,7 @@ function gerarEtiqueta() {
       const etiquetaDescricaoDiv = document.getElementById('etiquetaDescricao');
       etiquetaSKUDiv.textContent = skuValue;
       etiquetaDescricaoDiv.textContent = descricao;
+
       // Cria o conteúdo da etiqueta na nova janela
       const conteudoEtiqueta = `
           <!DOCTYPE html>
