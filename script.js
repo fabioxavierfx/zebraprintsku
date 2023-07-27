@@ -19,7 +19,7 @@ function gerarEtiqueta() {
         return response.json();
     })
     .then(data => {
-        const descricao = data.nome; // Supondo que o nome do produto é a descrição no Ideris
+        const descricao = data.title; // Supondo que o nome do produto é a descrição no Ideris
 
         // Atualiza a etiqueta exibida na página
         const etiquetaSKUDiv = document.getElementById('etiquetaSKU');
