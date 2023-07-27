@@ -23,57 +23,62 @@ function gerarEtiqueta() {
 
       // Cria o conteúdo da etiqueta na nova janela
       const conteudoEtiqueta = `
-          <!DOCTYPE html>
-          <html>
-          <head>
-              <title>Etiqueta</title>
-              <link rel="stylesheet" href="styles.css">
-          </head>
-          <body>
-              <div id="etiqueta">
-                  <h2 id="etiquetaSKU">${skuValue}</h2>
-                  <p id="etiquetaDescricao">${descricao}</p>
-              </div>
-              <script>
-                  // Função para ajustar o tamanho da fonte
-                  function ajustarTamanhoFonte() {
-                      const etiqueta = document.getElementById('etiqueta');
-                      const h2 = document.getElementById('etiquetaSKU');
-                      const p = document.getElementById('etiquetaDescricao');
-                      const tamanhoMaximo = etiqueta.offsetWidth; // Largura máxima da etiqueta
-  
-                      // Ajustar tamanho da fonte do SKU
-                      let tamanhoFonteH2 = 1.5;
-                      h2.style.fontSize = tamanhoFonteH2 + "cm";
-                      while (h2.scrollWidth > tamanhoMaximo * 0.8) {
-                          tamanhoFonteH2 -= 0.1;
-                          h2.style.fontSize = tamanhoFonteH2 + "cm";
-                      }
-  
-                      // Ajustar tamanho da fonte da descrição
-                      let tamanhoFonteP = 1;
-                      p.style.fontSize = tamanhoFonteP + "cm";
-                      while (p.scrollWidth > tamanhoMaximo) {
-                          tamanhoFonteP -= 0.1;
-                          p.style.fontSize = tamanhoFonteP + "cm";
-                      }
-                  }
-  
-                  // Aguardar um curto período antes de acionar a impressão
-                  setTimeout(() => {
-                      ajustarTamanhoFonte();
-                      window.print();
-                      window.close();
-                  }, 1000);
-              </script>
-          </body>
-          </html>
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Etiqueta</title>
+            <style>
+                body {
+                    font-family: Arial-black, sans-serif;
+                    text-align: center;
+                }
+				#etiqueta {
+					width: 15cm;
+					height: 9.5cm;
+					margin: 0 auto;
+					padding: 10px;
+					text-align: center;
+				}
+
+				#etiqueta h2 {
+					font-size: 320px;
+					margin: 0;
+					padding: 20px;
+					line-height: 75%;
+					font-weight: bold;
+				}
+
+				#etiqueta p {
+					font-size: 36px;
+					margin: 0;
+					padding: 20px;
+					line-height: 80%;
+					font-weight: bold;
+				}
+            </style>
+        </head>
+        <body>
+            <div id="etiqueta">
+                <h2>${skuValue}</h2>
+                <p>${descricao}</p>
+            </div>
+            <script>
+                // Aguardar um curto período antes de acionar a impressão
+                setTimeout(() => {
+                    window.print();
+                    window.close();
+                }, 1000);
+            </script>
+        </body>
+        </html>
       `;
-  
-      // Abre uma nova janela para exibir a etiqueta
-      const novaJanela = window.open("", "_blank");
+
+      // Abrir uma nova janela com o conteúdo da etiqueta
+      const novaJanela = window.open('', '_blank', 'width=200,height=150');
+      novaJanela.document.open();
       novaJanela.document.write(conteudoEtiqueta);
-  }
+      novaJanela.document.close();
+    })
     .catch(error => {
       console.error('Erro ao carregar os produtos:', error);
       // Tratar o erro conforme necessário
