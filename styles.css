@@ -22,7 +22,7 @@ form {
 }
 
 #etiqueta h2 {
-    font-size: 12px; /* Tamanho do texto do SKU - ajuste conforme necessário */
+    font-size: 320px; /* Tamanho do texto do SKU - ajuste conforme necessário */
     font-weight: bold;
     margin: 0;
     padding: 0;
@@ -30,7 +30,7 @@ form {
 }
 
 #etiqueta p {
-    font-size: 10px; /* Tamanho do texto da descrição - ajuste conforme necessário */
+    font-size: 36px; /* Tamanho do texto da descrição - ajuste conforme necessário */
     font-weight: normal; /* Remova o negrito se não for necessário */
     margin: 0;
     padding: 0;
