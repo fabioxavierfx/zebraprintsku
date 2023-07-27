@@ -15,24 +15,20 @@ form {
 #etiqueta {
     border: 1px solid #ccc;
     width: 15cm;
-    height: 9cm;
+    height: 10cm;
     margin: 0 auto;
-    padding: 1px;
+    padding: 10px;
     text-align: center;
 }
 
 #etiqueta h2 {
-    font-size: 3vw; /* Tamanho do texto do SKU - ajuste conforme necessário */
     font-weight: bold;
     margin: 0;
     padding: 0;
-    line-height: 3vw; /* Ajuste a altura da linha conforme necessário */
 }
 
 #etiqueta p {
-    font-size: 1vw; /* Tamanho do texto da descrição - ajuste conforme necessário */
-    font-weight: normal; /* Remova o negrito se não for necessário */
+    font-weight: normal;
     margin: 0;
     padding: 0;
-    line-height: 1vw; /* Ajuste a altura da linha conforme necessário */
 }
