@@ -28,7 +28,7 @@ function gerarEtiqueta() {
 
         // Verifica se o texto cabe no tamanho ideal
         if (elemento.scrollWidth > tamanhoIdeal) {
-            let tamanhoFonte = 5; // Tamanho inicial da fonte (1 rem)
+            let tamanhoFonte = 1; // Tamanho inicial da fonte (1 rem)
             elemento.style.fontSize = tamanhoFonte + "rem";
 
             // Aumenta o tamanho da fonte gradualmente até que o texto caiba no tamanho ideal
